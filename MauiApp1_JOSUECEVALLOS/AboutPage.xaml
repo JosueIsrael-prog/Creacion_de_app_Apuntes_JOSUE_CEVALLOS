@@ -1,0 +1,24 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1_JOSUECEVALLOS.AboutPage"
+             Title="Acerca de">
+    <StackLayout Padding="20" VerticalOptions="Center">
+        <!-- Título con el nombre -->
+        <Label Text="Josue Cevallos"
+               FontSize="24"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+        <!-- Descripción -->
+        <Label Text="Soy estudiante apasionado por aprender desarrollo multiplataforma con .NET MAUI."
+               FontSize="18"
+               HorizontalOptions="Center"
+               TextColor="Gray" />
+
+        <!-- Imagen representativa -->
+        <Image Source="icon.png" 
+               HeightRequest="100" 
+               WidthRequest="100" 
+               HorizontalOptions="Center" />
+    </StackLayout>
+</ContentPage>

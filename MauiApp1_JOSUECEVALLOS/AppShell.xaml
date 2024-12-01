@@ -1,0 +1,35 @@
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:MauiApp1_JOSUECEVALLOS"
+       x:Class="MauiApp1_JOSUECEVALLOS.AppShell"
+       Title="Mi Aplicación MAUI">
+
+    <!-- Navegación principal -->
+    <FlyoutItem Title="Inicio" Icon="dotnet_bot.png">
+        <ShellContent
+            Title="Inicio"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Acerca de" Icon="icon.png">
+        <ShellContent
+            Title="Acerca de"
+            ContentTemplate="{DataTemplate local:AboutPage}"
+            Route="AboutPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Información" Icon="dotnet_bot.png">
+        <ShellContent
+            Title="Información"
+            ContentTemplate="{DataTemplate local:InfoPage}"
+            Route="InfoPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Contacto" Icon="icon.png">
+        <ShellContent
+            Title="Contacto"
+            ContentTemplate="{DataTemplate local:ContactPage}"
+            Route="ContactPage" />
+    </FlyoutItem>
+</Shell>

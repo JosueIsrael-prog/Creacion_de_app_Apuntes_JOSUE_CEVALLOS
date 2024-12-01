@@ -1,0 +1,48 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1_JOSUECEVALLOS.MainPage"
+             Title="Inicio">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="25">
+            <Image
+                Source="icon.png"
+                HeightRequest="150"
+                Aspect="AspectFit"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Bienvenido a Mi Aplicación MAUI"
+                FontSize="24"
+                FontAttributes="Bold"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Explora y aprende con .NET MAUI para construir aplicaciones multiplataforma."
+                FontSize="18"
+                HorizontalOptions="Center"
+                TextColor="Gray" />
+
+            <Button
+                x:Name="MyButton"
+                Text="Haz clic aquí"
+                VerticalOptions="Center"
+                BackgroundColor="#512BD4"
+                TextColor="White"
+                Clicked="OnButtonClicked" />
+
+            <Label
+                x:Name="ClickLabel"
+                Text="Aún no has hecho clic."
+                FontSize="16"
+                HorizontalOptions="Center"
+                TextColor="Gray" />
+
+            <Button
+                Text="Ir a Página de Información"
+                VerticalOptions="Center"
+                BackgroundColor="#008CBA"
+                TextColor="White"
+                Clicked="OnNavigateToInfoPage" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

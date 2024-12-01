@@ -1,0 +1,33 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1_JOSUECEVALLOS.InfoPage"
+             Title="Información">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="25">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="150"
+                Aspect="AspectFit"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Página de Información"
+                FontSize="24"
+                FontAttributes="Bold"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Esta es una página adicional creada en .NET MAUI."
+                FontSize="18"
+                HorizontalOptions="Center"
+                TextColor="Gray" />
+
+            <Button
+                Text="Volver a Inicio"
+                VerticalOptions="Center"
+                BackgroundColor="#008CBA"
+                TextColor="White"
+                Clicked="OnNavigateToMainPage" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
