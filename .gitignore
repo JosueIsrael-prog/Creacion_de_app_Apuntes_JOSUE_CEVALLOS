@@ -1,0 +1,14 @@
+# Ignorar la carpeta .vs
+.vs/
+
+# Ignorar la carpeta bin
+bin/
+
+# Ignorar la carpeta obj
+obj/
+
+# Ignorar el archivo .sln (Solution File)
+*.sln
+
+# Ignorar archivos de configuración temporales
+*.user
